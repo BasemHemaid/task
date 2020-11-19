@@ -1,0 +1,130 @@
+<!DOCTYPE htm>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="fbook.css">
+    <title>Facebook</title>
+   <style type="text/css">
+    body
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.form{
+    height: 100%;
+    width: 100%;
+    background-image:  url(image.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.f-log{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background-color: white;
+    padding: 5px;
+}
+.button-box{
+    width: 320px;
+    margin: 35px auto;
+    position: relative;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 20px 100px;
+    cursor: pointer;
+    background: white;
+    border: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+    color:blue;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #a710ff);
+    border-radius: 30px;
+    transition: .5s;
+}
+#pf{
+    font-size: 30px;
+}
+#pl{
+    font-size: 18px;
+}
+.input{
+    left: 50px;
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s
+}
+.input-f{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 3px solid rgb(153, 153, 153);
+    outline: none;
+    background: transparent;
+    font-size: 17px;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor:  pointer;
+    display: block;
+    margin: auto;
+    background: blue;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-size: 20px;
+    color:white;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+.span{
+    color: rgba(119, 119, 119, 0.068);
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+.footer{
+    color: blue;
+    text-align: center;
+    margin-top: 35px;
+}
+   </style>
+</head>
+<body>
+    <div class="form">
+        <div class="f-log">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn"><p id="pf">facebook</p> <p id="pl">login</p></button>
+            </div>
+        
+        <form class="input">
+            <input type="text" class="input-f" placeholder="Email or Phone" required>
+            <input type="password" name="password" class="input-f" placeholder="Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">login</button>
+            <div class="footer">
+             <p class="id=pl"> Forget Password or sign up </p>   
+            </div>
+        </form>
+    </div></div>
+   
+</body>
+</html>
